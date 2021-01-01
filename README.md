@@ -36,11 +36,11 @@ Google Drive에 colab이라는 디렉토리를 생성한 후, 난이도에 따�
 
 (참고로 ipynb 파일은 과학자들이 파이썬 언어와 데이터로 작업 할 수 있도록 도와주는 인터랙티브 한 계산 환경 인 Jupyter Notebook에서 사용하는 노트 문서입니다.)
 
-​	![image-20201224100636209](Face recognition.assets/image-20201224100636209.png)
+​	![image-20201224100636209](README.assets/image-20201224100636209-1609477396534.png)
 
 이후, 업로드 된 basic.ipynb을 더블 클릭 한 후 상단의 "연결 앱" 버튼을 누르면 다음과 같이 " 더많은 앱 연결하기"를 선택 할 수 있습니다. 
 
-![image-20201224100559587](Face recognition.assets/image-20201224100559587.png)
+![image-20201224100559587](README.assets/image-20201224100559587.png)
 
 이후 다음과 같이 검색창에 "colab"을 검색하고 "연결"버튼을 누르면 구글 드라이브의 ipynb파일을 colab과 연결 할 수 있습니다.
 
@@ -52,7 +52,7 @@ Google Drive에 colab이라는 디렉토리를 생성한 후, 난이도에 따�
 
 간단한 print문과 사측연산 부터 matlab과 다소 비슷한 형식의 패키지들을 제공하기도 하는데 Colab에서는 재사용이 가능한 코드와 다양한 예제가 좌측의 `<>`모양의 아이콘을 클릭하면 사용할 수 있도록 제공하고 있습니다.
 
-![image-20201224100956210](Face recognition.assets/image-20201224100956210.png)
+![image-20201224100956210](README.assets/image-20201224100956210.png)
 
 
 
@@ -62,7 +62,7 @@ Google Drive에 colab이라는 디렉토리를 생성한 후, 난이도에 따�
 
 Colab에서는 간단한 인증 과정을 거쳐 Google Drive와 연동을 하여 데이터를 읽어고더나 연산 결과를 저장 할 수 있습니다.  
 
-![image-20201224101258795](Face recognition.assets/image-20201224101258795.png)
+![image-20201224101258795](Face_recognition.assets/image-20201224101258795.png)
 
 이런식으로 google Drive와 연동하여 데이터를 읽어올 수 있는데 
 
@@ -96,11 +96,11 @@ CPU와 GPU의 단순계산시 속도 차이를 구할 수도 있습니다.
 
 2D 그래프 제공
 
-![image-20201224135109359](Face%20recognition.assets/image-20201224135109359.png)
+![image-20201224135109359](README.assets/image-20201224135109359.png)
 
 3D 그래프 제공 
 
-![image-20201224135132461](Face%20recognition.assets/image-20201224135132461.png)
+![image-20201224135132461](README.assets/image-20201224135132461.png)
 
 
 
@@ -108,7 +108,7 @@ CPU와 GPU의 단순계산시 속도 차이를 구할 수도 있습니다.
 
 요즘 사용하는 스마트폰에는 사용자 앨범의 사진들을 Deep Learning 기술을 사용해 탐색하여 사람의 얼굴인지 여부를 판독한 후, 사용자로부터 일므을 입력 받으며 약간의 학습과정을 거쳐 인물별로 자동으로 분류를 해주는 기능을 제공하고 있습니다.
 
-![image-20201224102438146](Face recognition.assets/image-20201224102438146.png)
+![image-20201224102438146](README.assets/image-20201224102438146.png)
 
 이런 기능들을 구현하기 위해서는 가장 기본적으로 필요한 기술이 사진에서 얼굴을 찾아내 얼굴이 표시된 영역을 알아내야 하는데 이를 Face Detection이라고 하고, 감지된 얼굴데이터를 기반으로 동일한 인물을 찾아내 인식하는 것을 Face Recognition 얼굴인식이라고 합니다.
 
@@ -124,11 +124,11 @@ https://github.com/ageitgey/face_recognition
 
 Google Colab에 런타임 유형을 담으과 같이 Python3 / GPU로 변경합니다.
 
-![image-20201224103114521](Face recognition.assets/image-20201224103114521.png)
+![image-20201224103114521](README.assets/image-20201224103114521.png)
 
 
 
-![image-20201224103129744](Face recognition.assets/image-20201224103129744.png)
+![image-20201224103129744](README.assets/image-20201224103129744.png)
 
 
 
@@ -168,7 +168,7 @@ plt.imshow(image)
 plt.show()
 ```
 
-![image-20201224103937149](Face recognition.assets/image-20201224103937149.png)
+![image-20201224103937149](README.assets/image-20201224103937149.png)
 
 **측면의 얼굴도 인식은 하지만 위에처럼 안경쓰고 밑을 보고 있다던지 컴퓨터가 인식하기에 얼굴형과 안맞는다고 생각하는 얼굴은 인식하지 않는 것같습니다.**
 
@@ -229,7 +229,7 @@ for face in known_face_list :
   plt.show()
 ```
 
-![image-20201224110239554](Face recognition.assets/image-20201224110239554.png)
+![image-20201224110239554](README.assets/image-20201224110239554.png)
 
 누구인지 모르는 인물사진 unknown.jpg도 얼굴인식을 한 후, 다음처럼 잘라서 unknown_face에 저장합니다.
 
@@ -247,7 +247,7 @@ plt.imshow(unknown_face)
 plt.show()
 ```
 
-![image-20201224110351490](Face recognition.assets/image-20201224110351490.png)
+![image-20201224110351490](README.assets/image-20201224110351490.png)
 
 이후, face_encoding()함수를 사용해 enc_unknown_face 에 얼굴영역을 인코딩해 저장합니다. 
 
@@ -260,7 +260,7 @@ plt.imshow(enc_known_face)
 plt.show()
 ```
 
-![image-20201224110509157](C:%5CUsers%5CUser%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201224110509157.png)
+![image-20201224110509157](README.assets/image-20201224110509157.png)
 
 
 
@@ -286,7 +286,7 @@ for face in known_face_list :
   plt.show()
 ```
 
-![image-20201224110708677](Face recognition.assets/image-20201224110708677.png)
+![image-20201224110708677](README.assets/image-20201224110708677.png)
 
 python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Leaning, Deep Learing 등에 이용할 수 있습니다
 
@@ -318,15 +318,15 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 [vixVIZION](https://www.vixvizion.com/)
 
-![image-20201224111520884](Face recognition.assets/image-20201224111520884.png)
+![image-20201224111520884](README.assets/image-20201224111520884.png)
 
-![image-20201224111541052](Face recognition.assets/image-20201224111541052.png)
+![image-20201224111541052](README.assets/image-20201224111541052.png)
 
 
 
 꾸준히 기술을 개발하고 있는 모습도 기사를 통해 볼 수 있습니다.😶
 
-![image-20201224111614702](Face recognition.assets/image-20201224111614702.png)
+![image-20201224111614702](README.assets/image-20201224111614702.png)
 
 
 
@@ -362,7 +362,7 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 향후 제대로 보안 기능을 갖춘 생체 인식이 다중 팩터 인증 프로세스의 일부로 도입되면 수많은 앱과 웹사이트에서 비밀번호를 일일이 기입하지 않아도 될 것으로 기대됩니다.
 
-![image-20201224113305876](Face recognition.assets/image-20201224113305876.png)
+![image-20201224113305876](README.assets/image-20201224113305876.png)
 
 
 
@@ -376,7 +376,7 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 출처: https://www.yna.co.kr/view/AKR20200526135100005
 
-![image-20201224112825153](Face recognition.assets/image-20201224112825153.png)
+![image-20201224112825153](README.assets/image-20201224112825153.png)
 
 최근 경기 침체로 소비 규모를 줄이는 대신 꼭 필요한 기능과 특징을 가진 제품·플랫폼을 받고자 하는 소비자가 늘고 있다. 이에 기업들은 '니치(틈새)'를 더 세분화해 개인 맞춤 상품과 서비스를 제공하는 '초니치 마케팅'을 펼치고 있다.
 
@@ -386,7 +386,7 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 성동구청은 AI 안면인식 열 감지 카메라를 도입했다. 건물 출입 전 AI 안면인식 열 감지 카메라 앞에 서서 마스크의 착용 여부와 체온 측정을 거치는 철저한 방역 시스템으로 시민의 불안감을 해소해 나가고 있다.
 
-![image-20201224113401752](Face recognition.assets/image-20201224113401752.png)
+![image-20201224113401752](README.assets/image-20201224113401752.png)
 
 현재 광주 교육장에서 뿐만 아니라 다른 여러 건물에서도 열 감지 카메라가 도입되어 체온을 측정해본 경험이 다들 있으실거라고 생각이 듭니다.
 
@@ -396,7 +396,7 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 출처 : https://www.boannews.com/media/view.asp?idx=77220&kind=0
 
-![image-20201224113131002](Face recognition.assets/image-20201224113131002.png)
+![image-20201224113131002](README.assets/image-20201224113131002.png)
 
 왜 이렇게 이런 카메라들이 인기를 끄는 것일까? 먼저는 인공지능 카메라를 매장에 설치하면 소비자들의 패턴을 보다 상세히 분석할 수 있기 때문이다. 어떤 연령과 성별의 소비자들이 어떤 물건을 어떤 방식으로 구매하고 소비하는지 알게 되면 경쟁에서 우위에 설 수 있게 된다. 아마존 같은 대형 업체도 이런 식으로 소비자들과 시장을 연구한다는 건 익히 알려진 사실이다.
 
@@ -420,6 +420,6 @@ python 기반의 이미지 처리방법이나 얼굴 인식등 혹은 Machine Le
 
 다양한 사례에서 이용되는 API들도  많이 있으니 추가적으로 학습하시면 도움이 될 것 같습니다. 
 
-![image-20201224113942421](Face recognition.assets/image-20201224113942421.png)
+![image-20201224113942421](README.assets/image-20201224113942421.png)
 
-![image-20201224114130394](Face recognition.assets/image-20201224114130394.png)
+![image-20201224114130394](README.assets/image-20201224114130394.png)
